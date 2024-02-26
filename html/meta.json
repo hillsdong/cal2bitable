@@ -1,0 +1,23 @@
+{
+    "schemaVersion": 1,
+    "version": "1.0.0",
+    "type": "data_connector",
+    "extraData": {
+      "disabledPeriodicSync": false,
+      "dataSourceConfigUiUri": "https://f7807b07-159a-465c-9efa-4745cf404b1e-00-3qd7jtdwygfzy.pike.replit.dev/",
+      "initHeight": 300,
+      "initWidth": 520
+    },
+    "protocol": {
+      "type": "http",
+      "httpProtocol": {
+        "uris": [{
+          "type": "tableMeta",
+          "uri": "/table_meta.json"
+        },{
+          "type": "records",
+          "uri": "/api/records"
+        }]
+      }
+    }
+  }

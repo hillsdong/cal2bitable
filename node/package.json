@@ -1,0 +1,23 @@
+{
+  "name": "cal2bitable-config-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000 --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --port 3000 --hostname 0.0.0.0",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@base-open/connector-api": "https://lf9-static.bytednsdoc.com/obj/eden-cn/jjjpceh7nulojvhj/@base-open-connector-api-0.1.0-alpha.2.tgz",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reset-css": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.20",
+    "@types/react": "18.2.58",
+    "typescript": "5.3.3"
+  }
+}

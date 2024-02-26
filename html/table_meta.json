@@ -1,0 +1,66 @@
+{
+    "code": 0,
+    "message": "POST请求成功",
+    "data": {
+        "tableName": "日历连接器",
+        "fields": [
+            {
+                "fieldId": "fid_title",
+                "fieldName": "日程标题",
+                "fieldType": 1,
+                "isPrimary": true,
+                "description": ""
+            },
+            {
+                "fieldId": "fid_start_time",
+                "fieldName": "日程开始日期",
+                "fieldType": 5,
+                "isPrimary": false,
+                "description": "",
+                "property": {
+                    "formatter": "yyyy-MM-dd HH:mm"
+                }
+            },
+            {
+                "fieldId": "fid_end_time",
+                "fieldName": "日程结束日期",
+                "fieldType": 5,
+                "isPrimary": false,
+                "description": "",
+                "property": {
+                    "formatter": "yyyy-MM-dd HH:mm"
+                }
+            },
+            {
+                "fieldId": "fid_duration_minutes",
+                "fieldName": "日程分钟时长",
+                "fieldType": 2,
+                "isPrimary": false,
+                "description": "",
+                "property": {
+                    "formatter": ""
+                }
+            },
+            {
+                "fieldId": "fid_description",
+                "fieldName": "日程描述",
+                "fieldType": 1,
+                "isPrimary": false,
+                "description": "",
+                "property": {
+                    "formatter": ""
+                }
+            },
+            {
+                "fieldId": "fid_calender_name",
+                "fieldName": "日程所在日历",
+                "fieldType": 3,
+                "isPrimary": false,
+                "description": "",
+                "property": {
+                    "formatter": ""
+                }
+            }
+        ]
+    }
+}
