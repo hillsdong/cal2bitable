@@ -20,7 +20,7 @@ def getCaldavInfo():
         return {}
     return json.loads(datasourceConfigStr)
 
-def checkCaldavInfo(caldavInfo) :
+def checkCaldavInfo(caldavInfo):
     if caldavInfo is None:
         return False
     print("caldavInfo", caldavInfo.get("caldavURL"), caldavInfo.get("caldavUser"))
@@ -32,12 +32,17 @@ def checkCaldavInfo(caldavInfo) :
         return False
     return True
 
+def addHttpsPrefix(url):
+    if not url.startswith('https://') and not url.startswith('http://'):
+        return 'https://' + url
+    return url
+
 def syncEvents():
     caldavInfo = getCaldavInfo()
     if checkCaldavInfo(caldavInfo) == False:
         return []
     with caldav.DAVClient(
-        url=caldavInfo.get("caldavURL"),
+        url=addHttpsPrefix(caldavInfo.get("caldavURL")),
         username=caldavInfo.get("caldavUser"),
         password=caldavInfo.get("caldavPass"),
     ) as client:
